@@ -1,0 +1,18 @@
+/* .homecontainer{
+    display: flex;
+    justify-content: center;
+} */
+
+/* .homepage h1 {
+    font-family: Arial, sans-serif;
+    color: #f31d1d; /* Optional: set text color */
+  
+.homepage {
+    display: flex;
+    justify-content: center;
+    align-items: center;/*Vertically centers the content.*/ 
+    height: 100vh; 
+    
+    background-color: #f5f5f5; /* Optional: add a background color */
+  }
+  

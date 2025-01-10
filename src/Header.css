@@ -1,0 +1,23 @@
+.header-container {
+    width: 100%;
+    background-color: palevioletred;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-end;
+    height: 70px;
+  }
+.navbar a{
+    color: b;
+    margin:20px;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+
+
+}
+.navbar a:hover {
+    color: #ff6347;
+    background-color: aliceblue;
+    border-radius: 7px;
+  }

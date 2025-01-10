@@ -1,0 +1,88 @@
+.singup-component {
+    display: flex; /* Enable Flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+    background-color:white; /* Light background color */
+  }
+.signup-form-container{
+    background-color: aqua;
+    width: 30%;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 7px 2px #a74a0cc4;
+  }
+.signup-remover{
+    display: flex;
+    justify-content: end;
+  }
+.signup-remover i:hover{
+     
+      color: red;
+      perspective: 2000px;
+      font-size: 20px;
+    
+  }
+.signup-header{
+    display: flex;
+    justify-content:center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+}
+  
+  
+.form-inputs {
+    margin-bottom: 20px; /* Space between form fields */
+}
+.form-inputs label {
+    display: block; /* Make label block-level for spacing */
+    margin-bottom: 5px; /* Add space below label */
+    font-weight: bold; /* Make label text bold */
+    color: #555555; /* Darker text color for labels */
+  }
+  
+.form-inputs input[type="text"],
+  input[type="password"] {
+    width: 100%; /* Full width of the container */
+    padding: 10px; /* Inner padding for the inputs */
+    border: 1px solid #cccccc; /* Border color */
+    border-radius: 7px; /* Rounded corners */
+    font-size: 14px; /* Input font size */
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+  }
+  .signup-submit{
+    /* display: flex;
+    justify-content: center; */
+    text-align: center;
+  }
+  .signup-submit input[type="submit"] {
+    width: 50%; /* Full width button */
+    padding: 10px; /* Button padding */
+    background-color: #007bff; /* Primary button color */
+    color: white; /* White text color */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+     /* Pointer cursor on hover */
+    font-size: 16px; /* Button text size */
+    transition: text-decoration  2s ease ; /* Smooth hover effect */
+    
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #0056b3; 
+    cursor: pointer;
+    /* text-decoration: underline; */
+  }
+  
+  span {
+    font-size: 12px; /* Small error text */
+     /* Error message color */
+  }
+.signup-login{
+  text-align: center;
+  margin-top: 5px;
+  
+}
+.signup-login a{
+  text-decoration: underline;
+}
