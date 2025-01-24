@@ -1,12 +1,12 @@
 .singup-component {
-    display: flex; /* Enable Flexbox */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    height: 100vh; /* Full viewport height */
-    background-color:white; /* Light background color */
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    height: 100vh; 
+    background-color:white; 
   }
 .signup-form-container{
-    background-color: aqua;
+    background-color:color-mix(in srgb, color percentage, color percentage);
     width: 30%;
     padding: 20px;
     border-radius: 20px;
@@ -19,7 +19,7 @@
 .signup-remover i:hover{
      
       color: red;
-      perspective: 2000px;
+      transform: rotate(15deg);
       font-size: 20px;
     
   }
@@ -32,23 +32,23 @@
   
   
 .form-inputs {
-    margin-bottom: 20px; /* Space between form fields */
+    margin-bottom: 20px;
 }
 .form-inputs label {
-    display: block; /* Make label block-level for spacing */
-    margin-bottom: 5px; /* Add space below label */
-    font-weight: bold; /* Make label text bold */
-    color: #555555; /* Darker text color for labels */
+    display: block; 
+    margin-bottom: 5px; 
+    font-weight: bold; 
+    color: #555555; 
   }
   
 .form-inputs input[type="text"],
   input[type="password"] {
-    width: 100%; /* Full width of the container */
-    padding: 10px; /* Inner padding for the inputs */
-    border: 1px solid #cccccc; /* Border color */
-    border-radius: 7px; /* Rounded corners */
-    font-size: 14px; /* Input font size */
-    box-sizing: border-box; /* Ensure padding doesn't affect width */
+    width: 100%; 
+    padding: 10px; 
+    border: 1px solid #cccccc; 
+    border-radius: 7px; 
+    font-size: 14px; 
+    box-sizing: border-box;
   }
   .signup-submit{
     /* display: flex;
@@ -56,27 +56,26 @@
     text-align: center;
   }
   .signup-submit input[type="submit"] {
-    width: 50%; /* Full width button */
-    padding: 10px; /* Button padding */
-    background-color: #007bff; /* Primary button color */
-    color: white; /* White text color */
-    border: none; /* Remove default border */
-    border-radius: 5px; /* Rounded corners */
-     /* Pointer cursor on hover */
-    font-size: 16px; /* Button text size */
-    transition: text-decoration  2s ease ; /* Smooth hover effect */
+    width: 50%; 
+    padding: 10px; 
+    background-color:coral; 
+    color: white; 
+    border: none; 
+    border-radius: 20px; 
+    font-size: 16px; 
+    transition: text-decoration  2s ease ; 
     
   }
   
   input[type="submit"]:hover {
     background-color: #0056b3; 
     cursor: pointer;
-    /* text-decoration: underline; */
+    
   }
   
   span {
-    font-size: 12px; /* Small error text */
-     /* Error message color */
+    font-size: 12px; 
+     
   }
 .signup-login{
   text-align: center;

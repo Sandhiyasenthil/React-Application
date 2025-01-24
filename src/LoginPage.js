@@ -1,10 +1,11 @@
 import React from 'react'
-import { useState } from 'react';
+import { useState} from 'react';
 import './Login.css';
 import { Link } from 'react-router-dom';
-
+import axios from "axios";
+import { useNavigate } from 'react-router-dom';
 export default function LoginPage() {
-  const [name, setName] = useState("");
+  const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
@@ -40,10 +41,28 @@ export default function LoginPage() {
     event.preventDefault();
 
     if (validateForm()) {
-      alert(`Form submitted successfully!
-      Name: ${name}
-      Email: ${email}`);
-    }
+    
+      axios.get("http://localhost:4200/users")
+         .then((response) => {
+         console.log(response.data);
+
+          const userExists = response.data.some((user) => user.email===email && user.password === password);
+
+      if (userExists) {
+        
+        alert("successfully logged in");
+
+          setEmail("");
+          setPassword("");
+          navigate('/home')
+      }
+    })
+    .catch((error) => {
+      console.error("Error :", error);
+      alert("An error occurred. Please try again later.");
+    });
+  }    
+    
   };
   return (
   <div className='login-component'>

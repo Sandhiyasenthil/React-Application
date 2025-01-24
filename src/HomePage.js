@@ -2,46 +2,54 @@ import React from 'react';
 import './Home.css';
 import Footer from './Footer';
 import Header from './Header';
-// import 'slick-carousel/slick/slick.css';
-// import 'slick-carousel/slick/slick-theme.css';
-// import Slider from 'react-slick';
 
 export default function HomePage() {
-  // const images = [
-  //   'https://assets0.mirraw.com/images/11845670/ACW8803_zoom.jpg?1694693060',
-  //   'https://d2x02matzb08hy.cloudfront.net/img/clothing/hero_image/781232743/tas328.jpg/images/image2.jpg',
-  //   'publihttps://t3.ftcdn.net/jpg/00/96/74/82/360_F_96748234_L1OpQlE8LQJmmjGpeQZvcOVOkhxCPzCa.jpgc/images/image3.jpg',
-  //   'public/https://t3.ftcdn.net/jpg/00/96/74/82/360_F_96748234_L1OpQlE8LQJmmjGpeQZvcOVOkhxCPzCa.jpgimages/image4.jpg',
-  // ];
-
-  // const settings = {
-  //   dots: true,
-  //   infinite: true,
-  //   speed: 500,
-  //   slidesToShow: 1,
-  //   slidesToScroll: 1,
-  //   autoplay: true,
-  //   autoplaySpeed: 3000,
-  //   arrows: true,
-  // };
-
   return (
-    <div>
+    <div className='home-container'>
+      <div className='home-header'>
       <Header />
-
-      <div className="homepage">
-        <h1>Welcome to Dress Shop</h1>
-         {/* <Slider {...settings}>
-          {images.map((image, index) => (
-            <div key={index}>
-              <img src={image} alt={`Slide ${index + 1}`} className="slider-image" />
-            </div>
-          ))}
-        </Slider> */}
+    
+      </div>
+     
+      {/* <div className='home-center'>
+        <div className='home-center-heading'>
+        <h1> Welcome to the Shopy World! </h1>
+        </div>
+        <div className='home-center-image'>
+          <img src="homepage-dress.jpg"></img>
+        </div>
+        
+       </div> */}
+     <div class="home-center-section">
+      <div className='home-center-section-imagecontainer-1'>
+          <div className='image-1-container'>
+          <img src="homepage-images/homepage-dress1.jpg"></img>
+          </div>
+          <div class="content--container">
+          <p class="subtitle">CASUAL & EVERYDAY</p>
+          <h1>Effortlessly Blend Comfort & Style!</h1>
+          <p class="description">
+          Effortlessly blend comfort and style with our Casual & Everyday collection, featuring cozy sweaters, versatile denim, laid-back tees, and relaxed-fit joggers for your everyday adventures.
+          </p>
+          <button >VIEW COLLECTION</button>
+         </div>
+       
+      </div>
+      <div className='home-center-section-imagecontainer-2'>
+         <div className='image-2-container'>
+            <img src="homepage-images/homepage-dress2.jpg"></img>
+         </div>
+         <div className='image-3-container'>
+          <img src="homepage-images/homepage-dress3.jpg"></img>
+         </div>
        </div>
-
+       
+    </div>
+      
+      <div className='home-footer'>
       <Footer />
-    </div> 
+      </div> 
+    </div>
   );
 }
 

@@ -6,7 +6,7 @@
   background-color:white; /* Light background color */
 }
 .login-form-container{
-  background-color: aqua;
+  background-color:hsl(from color h s l);
   width: 30%;
   padding: 20px;
   border-radius: 20px;
@@ -19,7 +19,7 @@
 .login-remover i:hover{
    
     color: red;
-    perspective: 2000px;
+    transform: rotate(15deg);
     font-size: 20px;
   
 }
@@ -58,10 +58,10 @@ input[type="password"] {
 .login-submit input[type="submit"] {
   width: 50%; /* Full width button */
   padding: 10px; /* Button padding */
-  background-color: #007bff; /* Primary button color */
+  background-color: coral; /* Primary button color */
   color: white; /* White text color */
   border: none; /* Remove default border */
-  border-radius: 5px; /* Rounded corners */
+  border-radius: 20px; /* Rounded corners */
    /* Pointer cursor on hover */
   font-size: 16px; /* Button text size */
   transition: text-decoration  2s ease ; /* Smooth hover effect */

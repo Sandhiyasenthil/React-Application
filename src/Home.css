@@ -1,18 +1,66 @@
-/* .homecontainer{
-    display: flex;
-    justify-content: center;
-} */
+ .home-center-section{
+    /* border:2px red solid; */
+    /* padding: 20px; */
+    flex: 1;
+   
+    /* height: 100vh; */
 
-/* .homepage h1 {
-    font-family: Arial, sans-serif;
-    color: #f31d1d; /* Optional: set text color */
-  
-.homepage {
-    display: flex;
-    justify-content: center;
-    align-items: center;/*Vertically centers the content.*/ 
-    height: 100vh; 
-    
-    background-color: #f5f5f5; /* Optional: add a background color */
   }
-  
+  .home-center-section-imagecontainer-1{
+    /* border:2px green solid; */
+    position: relative;
+    /* padding: 20px; */
+    
+    
+  }
+  .image-1-container{
+    /* border:2px violet solid; */
+    
+    
+    padding: 15px;
+  }
+  .image-1-container img{
+    width: 100%;
+  }
+  .content--container{
+    position: absolute;
+    top: 35px;
+    left: 50px;
+    width: 45%;
+  }
+  .content--container button:hover{
+    background-color: aqua;
+
+  }
+  .content--container button{
+    border-radius: 10px;
+    padding-left: 3px;
+
+  }
+
+
+
+  .home-center-section-imagecontainer-2{
+    /* border:2px black solid; */
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around
+    
+  }
+  .image-2-container{
+    /* border: 2px brown solid; */
+    margin: 10px;
+    
+  }
+  .image-2-container img{
+    height: 190px;
+    width: auto;
+    
+  }
+.image-3-container{
+  /* border: yellow 2px solid; */
+  margin: 10px;
+}
+
+

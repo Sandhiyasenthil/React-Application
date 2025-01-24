@@ -2,12 +2,15 @@ import React from 'react'
 import { useState } from 'react';
 import './Signup.css';
 import { Link } from 'react-router-dom';
+import axios from "axios";
+import { useNavigate } from 'react-router-dom';
 export default function SignUpPage() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
   const [errors, setErrors] = useState({}); // State to store error messages
+  const navigate = useNavigate();
 
   // Validation function
   const validateForm = () => {
@@ -40,10 +43,42 @@ export default function SignUpPage() {
     event.preventDefault();
 
     if (validateForm()) {
-      alert(`Form submitted successfully!
-      Name: ${name}
-      Email: ${email}`);
-    }
+      
+      axios.get("http://localhost:4200/users")
+         .then((response) => {
+         console.log(response.data);
+
+      const userExists = response.data.some((user) => user.email === email);
+
+      if (userExists) {
+        
+        alert("Email is already registered!");
+      } else {
+        axios.post("http://localhost:4200/users", {
+          name,
+          email,
+          password,
+        })
+        .then(() => {
+          alert("User registered successfully!");
+          setName("");
+          setEmail("");
+          setPassword("");
+          navigate('/login')
+
+        });
+      }
+    })
+    .catch((error) => {
+      console.error("Error during form submission:", error);
+      alert("An error occurred. Please try again later.");
+    });
+}
+  
+
+
+      
+    
   };
   return (
   <div className='singup-component'>
